@@ -1,0 +1,194 @@
+html,
+body {
+  font-size: 16px;
+  background: black;
+  color: pink;
+  font-family: 'Abel', sans-serif;
+  margin: 0;
+}
+
+/* Variables */
+:root {
+  --dark-pink: rgba(242, 16, 133, 0.8);
+}
+
+
+.container {
+  margin: auto;
+}
+
+.main {
+  height: 60rem;
+  background: url('https://www.nme.com/wp-content/uploads/2022/08/BLACKPINK-pink-venom-single-music-video-album-Born-pink.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.main img {
+  display: block;
+  margin: auto;
+}
+
+nav {
+  background-color: pink;
+  color: black;
+  min-height: 10%;
+  padding: 1rem 0 1rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  text-align: center;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  display: inline-block;
+  padding: 0 2rem 0 2rem;
+  font-weight: bold;
+}
+
+a {
+  color: var(--dark-pink);
+  text-decoration: none;
+}
+
+a:hover {
+  color: purple;
+}
+
+nav h2 {
+  font-family: 'Libre Baskerville', serif;
+  border: 2px solid black;
+  padding: 0.5rem;
+}
+
+.description {
+  padding: 2rem;
+}
+
+.description h2 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+}
+
+.description p {
+  min-width: 200px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.members {
+  background-color: pink;
+  color: var(--dark-pink);
+  padding: 2rem;
+}
+
+.members h2 {
+  text-align: center;
+  font-family: 'Libre Baskerville';
+  color: black;
+}
+
+.members h3 {
+  text-align: center;
+}
+
+.member-container {
+  flex: 25%;
+  padding: 0.3rem;
+  justify-self: center;
+}
+
+.member-container img {
+  width: 16rem;
+  filter: blur(1.5px);
+  transition: 300ms ease-in-out;
+}
+
+.member-container:hover img {
+  filter: blur(0);
+}
+
+.gallery {
+  display: flex;
+}
+
+.discography {
+  width: 90%;
+  margin: 3rem;
+  padding: 4rem;
+}
+
+.discography h2 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.discography img {
+  display: inline-flex;
+  height: 200px;
+  width: auto;
+  justify-content: center;
+  filter: grayscale(1);
+  padding: 0.2rem;
+}
+
+.discog-container:hover img {
+  filter: grayscale(0);
+}
+
+.youtube-button {
+  display: block;
+  background-color: pink;
+  color: black;
+  width: 30%;
+  padding: 1rem;
+  margin: auto;
+  margin-bottom: 4rem;
+  border: 2px solid white;
+  transition: 100ms linear;
+}
+
+.youtube-button:hover {
+  background-color: var(--dark-pink);
+}
+
+.youtube-button:hover a {
+  color: black;
+}
+
+.youtube-button h3 {
+  font-size: 2rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: pink;
+  color: var(--dark-pink);
+  height: 5rem;
+  text-align: center;
+  padding-top: 2rem;
+}
+
+/* Responsiveness */
+@media only screen and (max-width: 1000px) {
+  .member-container img {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .gallery {
+    display: block;
+    width: 100%;
+  }
+  .gallery img {
+    min-width: 100px;
+  }
+}
